@@ -1,6 +1,6 @@
 
-<h1 align="center">Hi 👋, I'm Dimas Kepaloongan</h1>
-<h3 align="center">I'm Newbie Developer</h3>
+<h1 align="center">Hi 👋, I'm Dimas</h1>
+<h3 align="center">I'm Newbie Game Developer</h3>
 
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Papalitas09&data=followers,repositories,stars,commits&theme=nautilus)](https://github.com/Papalitas09)
 <!-- ![readmebox](https://svgshare.com/i/15xW.svg) -->
@@ -16,9 +16,9 @@
   <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif">
   </a>
   
-- 👯 Collaborate with me on **Discord**
+- 👯 Collaborate with me on noone1379
 
-- 📫 How to reach me **okok@gmail.com**
+- 📫 How to reach me novadoxtipe.0ul@gmail.com
 
 <br>
 
