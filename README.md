@@ -2,11 +2,6 @@
 <h1 align="center">Hi 👋, I'm Dimas</h1>
 <h3 align="center">I'm Newbie Game Developer</h3>
 
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Papalitas09&data=followers,repositories,stars,commits&theme=nautilus)](https://github.com/Papalitas09)
-<!-- ![readmebox](https://svgshare.com/i/15xW.svg) -->
-
-
-
 <div>
   <h2 align="center">  ~ ABOUT ME ~  </h2>
 </div>
