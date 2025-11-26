@@ -1,131 +1,93 @@
-<!doctype html>
-<html lang="id">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mini Chess — Dimas</title>
+<div align="center">
+  <h1>Hi 👋, I'm Dimas</h1>
+  <h3>Full Stack Developer from Indonesia 🇮🇩</h3>
+  <p>Passionate about building web applications and learning new technologies</p>
+</div>
 
-  <!-- Chessboard.js + chess.js via CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/css/chessboard.min.css"/>
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; display:flex; gap:24px; align-items:flex-start; padding:24px; }
-    #board { width: 420px; }
-    .controls { max-width:420px; }
-    .btn { display:inline-block; padding:8px 12px; border-radius:8px; cursor:pointer; border:1px solid #444; background:#222; color:#fff; margin:4px 0; }
-    .small { padding:6px 10px; font-size:0.9rem }
-    .status { margin:8px 0; font-weight:600 }
-    .moves { font-family: monospace; white-space:pre-wrap; max-height:220px; overflow:auto; background:#f6f6f6; padding:8px; border-radius:6px; }
-    @media(max-width:720px){ body{flex-direction:column; align-items:center} }
-  </style>
-</head>
-<body>
-  <div id="board"></div>
+---
 
-  <div class="controls">
-    <h3>Mini Chess</h3>
-    <div class="status" id="status">Status: siap</div>
-    <div>
-      <button id="newBtn" class="btn small">New Game</button>
-      <button id="flipBtn" class="btn small">Flip Board</button>
-      <button id="hintBtn" class="btn small">Hint (legal move)</button>
-    </div>
+### 👨‍💻 About Me
 
-    <div style="margin-top:10px;">
-      <label><input type="checkbox" id="autoPlayAI" /> Main vs Random AI (AI bergerak setelah Anda)</label>
-    </div>
+- 🔭 I'm currently working on **web development projects**
+- 🌱 I'm currently learning **React, TypeScript, and C#**
+- 💬 Ask me about **JavaScript, Python, and web development**
+- 📫 How to reach me: **[your email]**
+- ⚡ Fun fact: **I love coding and exploring new technologies**
 
-    <div style="margin-top:12px;">
-      <strong>Moves:</strong>
-      <div id="moveList" class="moves"></div>
-    </div>
+---
 
-    <p style="margin-top:12px; font-size:0.9rem">Catatan: lawan AI menggunakan strategi sederhana (pilih random move). Untuk engine lebih canggih bisa integrasi Stockfish via WASM/worker.</p>
-  </div>
+### 📊 GitHub Statistics
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/js/chessboard.min.js"></script>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DNovF&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="170" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=DNovF&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="170" alt="languages graph" />
+</div>
 
-  <script>
-    // setup
-    const boardEl = document.getElementById('board');
-    const statusEl = document.getElementById('status');
-    const moveListEl = document.getElementById('moveList');
-    const autoPlayCheckbox = document.getElementById('autoPlayAI');
-    const cfg = {
-      draggable: true,
-      position: 'start',
-      onDrop: onDrop,
-      onSnapEnd: onSnapEnd,
-      onDragStart: onDragStart
-    };
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DNovF&theme=dracula&hide_border=false" height="170" alt="streak stats" />
+</div>
 
-    const game = new Chess();
-    const board = Chessboard(boardEl, cfg);
+---
 
-    function updateStatus(){
-      if (game.in_checkmate()) {
-        statusEl.textContent = 'Status: Checkmate — ' + (game.turn() === 'w' ? 'Black' : 'White') + ' menang';
-      } else if (game.in_draw()) {
-        statusEl.textContent = 'Status: Draw';
-      } else {
-        statusEl.textContent = `Status: giliran ${game.turn() === 'w' ? 'Putih' : 'Hitam'} ${game.in_check() ? '(in check)' : ''}`;
-      }
-      moveListEl.textContent = game.history({verbose:false}).join(' ');
-    }
+### 🛠️ Tech Stack
 
-    function onDragStart(source, piece, position, orientation) {
-      if (game.game_over()) return false;
-      // jika bukan giliran pemain (putih selalu pemain manusia di left-to-right)
-      // kita izinkan semua karena ini human vs human; jika ingin block saat AI turn, add logic.
-    }
+<div align="center">
 
-    function onDrop(source, target) {
-      const move = game.move({from: source, to: target, promotion: 'q'});
-      if (move === null) return 'snapback';
-      updateStatus();
+#### Languages
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="csharp logo" />
+<img width="12" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
+<img width="12" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" />
+<img width="12" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" />
 
-      // jika auto-AI diaktifkan dan game belum selesai, jalankan AI
-      if (autoPlayCheckbox.checked && !game.game_over()) {
-        window.setTimeout(() => {
-          makeRandomAIMove();
-          board.position(game.fen());
-          updateStatus();
-        }, 300);
-      }
-    }
+#### Frontend
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo" />
+<img width="12" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo" />
+<img width="12" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo" />
 
-    function onSnapEnd() {
-      board.position(game.fen());
-    }
+</div>
 
-    function makeRandomAIMove(){
-      const moves = game.moves();
-      if (moves.length === 0) return;
-      // pick random
-      const mv = moves[Math.floor(Math.random()*moves.length)];
-      game.move(mv);
-    }
+---
 
-    document.getElementById('newBtn').addEventListener('click', ()=>{
-      game.reset();
-      board.start();
-      updateStatus();
-    });
+### 📱 Connect With Me
 
-    document.getElementById('flipBtn').addEventListener('click', ()=>{
-      board.flip();
-    });
+<div align="center">
+  <a href="https://youtube.com/@yourhandle" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo" />
+  </a>
+  <a href="https://instagram.com/yourhandle" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo" />
+  </a>
+  <a href="https://twitch.tv/yourhandle" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="twitch logo" />
+  </a>
+  <a href="https://discord.com/users/youruserid" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="discord logo" />
+  </a>
+  <a href="mailto:youremail@gmail.com">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="gmail logo" />
+  </a>
+  <a href="https://linkedin.com/in/yourhandle" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo" />
+  </a>
+</div>
 
-    document.getElementById('hintBtn').addEventListener('click', ()=>{
-      const moves = game.moves({square: null, verbose: true});
-      // show a legal move example: pick a random legal move and highlight via status
-      if (moves.length === 0) { statusEl.textContent = 'Status: tidak ada move legal'; return; }
-      const mv = moves[Math.floor(Math.random()*moves.length)];
-      statusEl.textContent = `Contoh legal move: ${mv.from} → ${mv.to}`;
-    });
+---
 
-    // init
-    updateStatus();
-  </script>
-</body>
-</html>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/DNovF/DNovF/output/snake.svg" alt="Snake animation" />
+</div>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=DNovF&color=blueviolet&style=flat-square&label=Profile+Views" alt="profile views" />
+</div>
+
+<div align="center">
+  <p>⭐️ From <a href="https://github.com/DNovF">DNovF</a></p>
+</div>
