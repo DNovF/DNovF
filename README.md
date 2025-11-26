@@ -8,12 +8,6 @@
 
 ### 👨‍💻 About Me
 
-- 🔭 I'm currently working on **web development projects**
-- 🌱 I'm currently learning **React, TypeScript, and C#**
-- 💬 Ask me about **JavaScript, Python, and web development**
-- 📫 How to reach me: **[your email]**
-- ⚡ Fun fact: **I love coding and exploring new technologies**
-
 ---
 
 ### 📊 GitHub Statistics
@@ -41,8 +35,6 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" />
 <img width="12" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" />
-
-#### Frontend
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo" />
 <img width="12" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo" />
