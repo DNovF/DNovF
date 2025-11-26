@@ -1,4 +1,4 @@
-<div align="center">
+[<div align="center">
   <h1>Hi 👋, I'm ...</h1>
 </div>
 
@@ -82,3 +82,4 @@
 <div align="center">
   <p>⭐️ From <a href="https://github.com/DNovF">DNovF</a></p>
 </div>
+](https://github-readme-stats.vercel.app/api?username=DNovF&show_icons=true)
