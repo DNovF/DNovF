@@ -1,7 +1,5 @@
 <div align="center">
-  <h1>Hi 👋, I'm Dimas</h1>
-  <h3>Full Stack Developer from Indonesia 🇮🇩</h3>
-  <p>Passionate about building web applications and learning new technologies</p>
+  <h1>Hi 👋, I'm ...</h1>
 </div>
 
 ---
