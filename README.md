@@ -9,7 +9,7 @@
   <h2> My Skills </h2>
   <h3> 1. Frontend Developer</h3>
   <h3> 2. 3D Modeling </h3>
-  <h3> 3. Gamde Backend Developer </h3>
+  <h3> 3. Game Backend Developer </h3>
 ---
 
 ### 📊 GitHub Statistics
