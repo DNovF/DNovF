@@ -1,11 +1,15 @@
 <div align="center">
-  <h1>Hi 👋, I'm ...</h1>
+  <h1>Hi 👋, I'm Dimas </h1>
 </div>
 
 ---
 
 ### 👨‍💻 About Me
 
+  <h2> My Skills </h2>
+  <h3> 1. Frontend Developer</h3>
+  <h3> 2. 3D Modeling </h3>
+  <h3> 3. Gamde Backend Developer </h3>
 ---
 
 ### 📊 GitHub Statistics
@@ -47,19 +51,10 @@
 ### 📱 Connect With Me
 
 <div align="center">
-  <a href="https://youtube.com/@yourhandle" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo" />
-  </a>
-  <a href="https://instagram.com/yourhandle" target="_blank">
+  <a href="[https://instagram.com/yourhandle](https://www.instagram.com/nova_172412?igsh=dHZqdHFsdXgwZWow)" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo" />
   </a>
-  <a href="https://twitch.tv/yourhandle" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="twitch logo" />
-  </a>
-  <a href="https://discord.com/users/youruserid" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="discord logo" />
-  </a>
-  <a href="mailto:youremail@gmail.com">
+  <a href="mailto:novadoxtipe.0ul@gmail.com">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="gmail logo" />
   </a>
   <a href="https://linkedin.com/in/yourhandle" target="_blank">
